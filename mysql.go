@@ -43,8 +43,6 @@ func (conn *Connection) CheckConnection() error {
 }
 
 func (conn *Connection) Connect(options Options) error {
-	log.Println(ConnectionString(options))
-
 	rootCertPool, err := x509.SystemCertPool()
 
 	if err != nil {
