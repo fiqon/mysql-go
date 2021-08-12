@@ -1,4 +1,4 @@
-module github.com/grandx/mysql-go/mysql
+module github.com/grand-x/mysql-go/mysql
 
 go 1.16
 
