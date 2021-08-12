@@ -53,7 +53,6 @@ func (conn *Connection) Connect(options Options) error {
 
 	mysqlDriver.RegisterTLSConfig("cert", &tls.Config{
 		RootCAs:            rootCertPool,
-		InsecureSkipVerify: true,
 	})
 
 	db, err := sql.Open("mysql", ConnectionString(options))
